@@ -32,7 +32,7 @@ class VerticalTimelineElement extends Component {
 
     return (
       <div id={id} className={className}>
-        <VisibilitySensor onChange={this.onVisibilitySensorChange}>
+        <VisibilitySensor onChange={this.onVisibilitySensorChange} partialVisibility={true}>
           <div>
             <span style={iconStyle} className={`vertical-timeline-element-icon ${this.state.visible ? 'bounce-in' : 'is-hidden'}`}>{icon}</span>
             <div className={`vertical-timeline-element-content ${this.state.visible ? 'bounce-in' : 'is-hidden'}`}>
